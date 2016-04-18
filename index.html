@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=1000px">
+
+	<title>Верстка</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<header class="header__layout">
+		<div class="wrap">
+
+			<a href="#" class="header-block logo">
+				<img src="img/logo.png" alt="">
+				<span class="logo-title">Дизайн интерьеров</span>
+			</a>
+
+			<div class="header-block header-contacts">
+				<span>с 9:00 до 21:00 без выходных</span>
+				<span>г. Минск ул. Пионерская, 9</span>
+			</div>
+
+			<div class="header-block header-block--mg0">
+				<div class="header-phone">
+					<div class="header-phone__topline">
+						<a href="tel:+375447362001">+375 44 736-20-01</a>
+						<span class="header-phone__btn"></span>
+					</div>
+					<ul class="header-phone__droplist">
+						<li><a href="tel:+375447362001">+375 44 736-20-01</a></li>
+						<li><a href="tel:+375447362001">+375 44 736-20-01</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="header-block">
+				<a href="#callback-modal" class="blue-btn call-btn js-popup-modal">Заказать звонок</a>
+			</div>
+
+		</div>
+	</header>
+
+	<section class="main-form__layout">
+		<div class="wrap">
+			<div class="feedback-form">
+				<h1 class="h1-title">Дизайн интерьеров</h1>
+				<p class="h1-subtitle">От лучшей европейской студии дизайна</p>
+				<form class="js-form">
+					<div class="form-container cleara">
+						<div class="form-container__block">
+							<span>ВАШЕ ИМЯ</span>
+							<input type="text" name="name" placeholder="Иван" class="rfield">
+						</div>
+						<div class="form-container__block">
+							<span>НОМЕР ТЕЛЕФОНА</span>
+							<input type="text" name="phone" placeholder="+375 12 345 67 89" class="rfield js-only-digits">
+						</div>
+					</div>
+					<input class="blue-btn" type="submit" value="ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<form class="js-design-form">
+		<section class="choice-design__layout">
+			<div class="wrap">
+				<h3 class="h3-title">Выберите какой дизайн вам необходим</h3>
+
+				<div class="choice-design-panel cleara">
+					<label class="choice-design-panel__item">
+						<input type="radio" name="fb" value="Частный дом" />
+						<img src="img/icons/private-house.png" alt="">
+						<span>Частный дом</span>
+					</label>
+					<label class="choice-design-panel__item">
+						<input type="radio" name="fb" value="Квартира" />
+						<img src="img/icons/apartment.png" alt="">
+						<span>квартира</span>
+					</label>
+					<label class="choice-design-panel__item">
+						<input type="radio" name="fb" value="Офис" />
+						<img src="img/icons/office.png" alt="">
+						<span>офис</span>
+					</label>
+					<label class="choice-design-panel__item">
+						<input type="radio" name="fb" value="Магазин" />
+						<img src="img/icons/shop.png" alt="">
+						<span>магазин</span>
+					</label>
+					<label class="choice-design-panel__item">
+						<input type="radio" name="fb" value="Кафе, ресторан" />
+						<img src="img/icons/cafe.png" alt="">
+						<span>кафе, ресторан</span>
+					</label>
+					<label class="choice-design-panel__item">
+						<input type="radio" name="fb" value="Комната" />
+						<img src="img/icons/room.png" alt="">
+						<span>комната</span>
+					</label>
+				</div>
+			</div>
+		</section>
+		<section class="choice-design__layout step--2" style="display: none;">
+			<div class="wrap">
+				<h3 class="h3-title">Выберите площадь помещения</h3>
+				
+				<div class="choice-area-panel">
+					<label class="choice-area-panel__item">
+						<input type="radio" name="area" value="от 10 до 50 метров" />
+						<span>от 10 до 50 метров</span>
+					</label>
+					<label class="choice-area-panel__item">
+						<input type="radio" name="area" value="от 50 до 100 метров" />
+						<span>от 50 до 100 метров</span>
+					</label>
+					<label class="choice-area-panel__item">
+						<input type="radio" name="area" value="более 100 метров" />
+						<span>более 100 метров</span>
+					</label>
+				</div>
+			</div>
+		</section>
+		<section class="choice-design__layout step--3" style="display: none;">
+			<div class="wrap">
+				<h3 class="h3-title">Укажите ваш телефон для контакта со специалистом</h3>
+				
+				<input class="rfield js-only-digits" type="text" name="phone" placeholder="+375 12 345 67 89"> 
+				<input class="blue-btn" type="submit" value="ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ">
+			</div>
+		</section>
+	</form>
+
+	<section class="recommendation__layout">
+		<div class="wrap">
+			<h3 class="h3-title">РЕКОМЕНДАЦИЯ</h3>
+
+			<div class="recommendation-text-text-container cleara">
+				<div class="recommendation-text-container__image-block">
+					<img src="img/userfiles/avatar1.jpg" alt="">
+				</div>
+				<div class="recommendation-text-container__block">
+					<p>Дизайнер, которого мне порекомендовали мои знакомые сделал половину работы и после того, как меня совсем не устроил результат, куда-то пропал с 30% оплаты...</p>
+
+					<div class="quote-text grey">
+						<p>Компания никуда не денется, в отличие от частного дизайнера</p>
+					</div>
+
+					<p>Хотела сэкономить несколько долларов, но вышло все боком. После неудачи обратилась Studio57 к Александру. Мы проделали большую предварительную работу. Александр пошутил, что если после такой подготовки все не понравится с первого раза студия перестанет принимать заказы. Все очень понравилось с первого раза. Я очень довольна результатом и рекомендую.</p>
+
+					<p class="quote-author"><i>Светлана <br>г. Минск, Логойский тракт</i></p>
+				</div>
+			</div>
+
+			<div class="recommendation-slider recommendation-slider--right cleara">
+				<div class="slider-for">
+					<div>
+						<img src="img/userfiles/slide11.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide13.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide12.jpg" alt="">
+					</div>
+				</div>
+				<div class="slider-nav">
+					<div>
+						<img src="img/userfiles/slide11.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide13.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide12.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="problems__layout">
+		<div class="wrap">
+			<h3 class="h3-title">постарайтесь избежать следующих ситуаций</h3>
+			
+			<div class="problems-slider">
+				<div class="cleara">
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №1</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты. Еще Траут показал, что повторный контакт неестественно специфицирует conversion rate, работая над проектом.</p>
+					</div>
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №1</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты. Еще Траут показал, что повторный контакт неестественно специфицирует conversion rate, работая над проектом.</p>
+					</div>
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №1</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты. Еще Траут показал, что повторный контакт неестественно специфицирует conversion rate, работая над проектом.</p>
+					</div>
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №1</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты. Еще Траут показал, что повторный контакт неестественно специфицирует conversion rate, работая над проектом.</p>
+					</div>
+				</div>
+				<div class="cleara">
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №2</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты. Еще Траут показал, что повторный контакт неестественно специфицирует conversion rate, работая над проектом.</p>
+					</div>
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №2</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты.</p>
+					</div>
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №2</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг.</p>
+					</div>
+					<div class="problems__item">
+						<p class="problems__item-title">Проблема №2</p>
+
+						<p>Поведенческий таргетинг, не меняя концепции, изложенной выше, директивно специфицирует направленный маркетинг, оптимизируя бюджеты. Еще Траут показал, что повторный контакт неестественно специфицирует conversion rate, работая над проектом.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="recommendation__layout">
+		<div class="wrap">
+			<h3 class="h3-title">РЕКОМЕНДАЦИЯ</h3>
+
+			<div class="recommendation-text-container cleara">
+				
+				<div class="recommendation-text-container__block">
+					<p>Я совершенно случайно в кругу знакомых обмолвилась, что собираюсь делать ремонт в квартире и ищу дизайнера. Мои знакомые рассказали, что в Минске есть подразделение крутой международной студии и что ребята делают невероятные дизайн-проекты</p>
+
+					<div class="quote-text grey">
+						<p>Студия Европейская -  а цены белорусские</p>
+					</div>
+
+					<p>Я не ожидала, что стоимость будет не дороже многих не то, что дизайн студий, но и дизайнеров фрилансеров. В общем соотношение цена/качество супер!</p>
+
+					<p class="quote-author"><i>Ольга <br>г. Минск, ул. Каролинская</i></p>
+				</div>
+				<div class="recommendation-text-container__image-block">
+					<img src="img/userfiles/avatar2.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="recommendation-slider recommendation-slider--left cleara">
+				<div class="slider-for">
+					<div>
+						<img src="img/userfiles/slide11.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide13.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide12.jpg" alt="">
+					</div>
+				</div>
+				<div class="slider-nav">
+					<div>
+						<img src="img/userfiles/slide11.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide13.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide12.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="form2__layout">
+		<div class="wrap">
+			<div class="feedback-form">
+				<h2 class="h2-title">Бесплатная консультация</h2>
+				<p class="h1-subtitle">От лучшей европейской студии дизайна</p>
+				<form class="js-form" method="POST">
+					<div class="form-container cleara">
+						<div class="form-container__block">
+							<span>ВАШЕ ИМЯ</span>
+							<input type="text" name="name" placeholder="Иван" class="rfield" >
+						</div>
+						<div class="form-container__block">
+							<span>НОМЕР ТЕЛЕФОНА</span>
+							<input type="text" name="phone" placeholder="+375 12 345 67 89" class="rfield js-only-digits" >
+						</div>
+					</div>
+					<input class="blue-btn" type="submit" value="ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio__layout">
+		<div class="wrap">
+			<h2 class="h2-title">Наше портфолио</h2>
+			<p class="h2-subtitle">В Беларуси выполнено более 300 проектов, <br>в мире более 2 500</p>
+		</div>
+		
+		<div class="portfolio-slider__layout">
+			<div class="portfolio-slider-container">
+				<div class="portfolio-slider js-portfolio-slider">
+					<div class="portfolio-slider__arrows-wrap"></div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3.jpg')"></div>
+					</div>
+				</div>
+				
+				<div class="portfolio-slider__avatar-wrap">
+					<img class="portfolio-slider__avatar" src="img/portfolio/portfolio-avatar1.jpg" alt="">
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="portfolio-slider__text">
+					<p>Очень понравилось, как мне передалали комнату. Спасибо!</p>
+					<p><i>Александра, Петр и Паша, ул. Гикало, Минск</i></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="portfolio-slider__layout">
+			<div class="portfolio-slider-container">
+				<div class="portfolio-slider js-portfolio-slider">
+					<div class="portfolio-slider__arrows-wrap"></div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2-3.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2-2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio2-3.jpg')"></div>
+					</div>
+				</div>
+				
+				<div class="portfolio-slider__avatar-wrap">
+					<img class="portfolio-slider__avatar" src="img/portfolio/portfolio-avatar2.jpg" alt="">
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="portfolio-slider__text">
+					<p>Нашей дочке трудно было угодить. она перфекционист. Все долно быть идеально. Но все получилось. Благодарим!</p>
+					<p><i>Евгения и Артур, ул. Нововиленская, Минск</i></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="portfolio-slider__layout">
+			<div class="portfolio-slider-container">
+				<div class="portfolio-slider js-portfolio-slider">
+					<div class="portfolio-slider__arrows-wrap"></div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+					</div>
+				</div>
+				<div class="portfolio-slider__avatar-wrap">
+					<img class="portfolio-slider__avatar" src="img/portfolio/portfolio-avatar3.jpg" alt="">
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="portfolio-slider__text">
+					<p>Мы озвучили сумму, которую готовы потратить на ремонт и попросили, чтобы проект был ориентирован на нее.<br>Понравилось, что в намеченную сумму практически вписались :) 
+					<p><i>Алексей и Екатерина, ул. Скрыганова, Минск</i></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="portfolio-slider__layout">
+			<div class="portfolio-slider-container">
+				<div class="portfolio-slider js-portfolio-slider">
+					<div class="portfolio-slider__arrows-wrap"></div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio4-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio4-2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio4-3.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio4-1.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio4-2.jpg')"></div>
+					</div>
+					<div class="portfolio-slider__option">
+						<div class="portfolio-slider__image" style="background-image: url('img/portfolio/portfolio4-3.jpg')"></div>
+					</div>
+				</div>
+				<div class="portfolio-slider__avatar-wrap">
+					<img class="portfolio-slider__avatar" src="img/portfolio/portfolio-avatar4.jpg" alt="">
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="portfolio-slider__text">
+					<p>Отличная холостяцкая квартира получилась. Уезжал на несколько месяцев за границу, оставил ребятам ключи и предоплату. Только фотки в вайбер кажую неделю получал. Приехал - все готово. Здорово!</p>
+					<p><i>Костя, пр-т Независимости, Минск</i></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="recommendation__layout">
+		<div class="wrap">
+			<h3 class="h3-title">РЕКОМЕНДАЦИЯ</h3>
+
+			<div class="recommendation-text-text-container cleara">
+				<div class="recommendation-text-container__image-block">
+					<img src="img/userfiles/avatar3.jpg" alt="">
+				</div>
+				<div class="recommendation-text-container__block">
+					<p>Дизайнер, которого мне порекомендовали мои знакомые сделал половину работы и после того, как меня совсем не устроил результат, куда-то пропал с 30% оплаты...</p>
+
+					<div class="quote-text grey">
+						<p>Компания никуда не денется, в отличие от частного дизайнера</p>
+					</div>
+
+					<p>Хотела сэкономить несколько долларов, но вышло все боком. После неудачи обратилась Studio57 к Александру. Мы проделали большую предварительную работу. Александр пошутил, что если после такой подготовки все не понравится с первого раза студия перестанет принимать заказы. Все очень понравилось с первого раза. Я очень довольна результатом и рекомендую.</p>
+
+					<p class="quote-author"><i>Светлана <br>г. Минск, Логойский тракт</i></p>
+				</div>
+			</div>
+
+			<div class="recommendation-slider recommendation-slider--right cleara">
+				<div class="slider-for">
+					<div>
+						<img src="img/userfiles/slide11.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide13.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide12.jpg" alt="">
+					</div>
+				</div>
+				<div class="slider-nav">
+					<div>
+						<img src="img/userfiles/slide11.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide13.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/userfiles/slide12.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="text__layout">
+		<div class="wrap">
+			<div class="text-container cleara">
+				<div class="text-container__block">
+					<img src="img/userfiles/man.png" alt="">
+				</div>
+				<div class="text-container__block">
+					
+					<p>Как бы мы не старались иногда случаются недопонимания и косяки. Все наши клиенты знают, что всегда будут услышаны и все недочеты исправятся. Нам очень важна наша репутация! </p>
+
+					<div class="quote-text">
+						<p>Мы с Дмитрием не прячемся за названием компании и лично в ответе перед всеми нашими клиентами</p>
+					</div>
+
+					<p>Мой телефон +375 44 567-22-22. <br>Звоните в любое время и я с радостью отвечу на все интересующие вас вопросы. </p>
+
+					<p class="quote-author"><i>Александр, соучредитель<br>Studio 57 Беларусь</i></p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="how-much__layout grey-layout">
+		<div class="wrap">
+			<h2 class="h2-title">Сколько стоит дизайн-проект</h2>
+			<p class="h2-subtitle">В Беларуси выполнено более 300 проектов, <br>в мире более 2 500 </p>
+			
+			<div class="how-much__container cleara">
+				<p class="how-much__title">Планировка <span class="old-price">10у.е.</span>  7 у.е. за кв.м.</p>
+
+				<div class="how-much__block cleara">
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio2.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+				</div>
+				<div class="how-much__block">
+					<ul class="dashed">
+						<li>Разработка от 3 и более вариантов планировки.</li>
+						<li>Эскизное решение потолков.</li>
+						<li>Схема расстановки мебели с габаритами. </li>
+						<li>Эскизное решение напольных покрытий. </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="how-much__container cleara">
+				<p class="how-much__title">3D визуализация <span class="old-price">18у.е.</span> 13 у.е. за кв.м.</p>
+
+				<div class="how-much__block">
+					<ul class="dashed p80">
+						<li>Коллажи концептуальных решений интерьера.</li>
+						<li>Подбор и посещение салонов и магазинов.</li>
+						<li>3 цикла правок интерьерного решения.</li>
+						<li>Отображение реально существующих материалов.</li>
+					</ul>
+				</div>
+				<div class="how-much__block cleara">
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-1.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+				</div>
+			</div>
+
+			<div class="how-much__container cleara">
+				<p class="how-much__title">Схемы и чертежи <span class="old-price">15у.е.</span> 11 у.е. за кв.м.</p>
+
+				<div class="how-much__block cleara">
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-1.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+				</div>
+				<div class="how-much__block">
+					<ul class="dashed">
+						<li>План демонтажа-монтажа.</li>
+						<li>План полов и экспликация полов.</li>
+						<li>План потолков, сечение потолков</li>
+						<li>Схема размещения светильников и выключателей.</li>
+						<li>Схема расстановки розеток и слаботочных сетей.</li>
+						<li>Схема водоснабжения и канализации.</li>
+						<li>Схема отделки и экспликации стен ...и многое другое.<br>Всего около 80 чертежей.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="how-much__container cleara">
+				<p class="how-much__title">Подбор материалов <span class="old-price">5у.е.</span> 3 у.е. за кв.м.</p>
+
+				<div class="how-much__block">
+					<ul class="dashed p80">
+						<li>Спецификация отделочных материалов.</li>
+						<li>Спецификация мебели, освещения и т.д.</li>
+						<li>Указание рыночных цен на элементы интерьера.</li>
+						<li>Колористические решения всех помещений.</li>
+					</ul>
+				</div>
+				<div class="how-much__block cleara">
+					
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-1.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+				</div>
+			</div>
+
+			<div class="how-much__container cleara">
+				<p class="how-much__total-title">ИТОГО <span class="old-price">48 у.е.</span> 34 у.е. за кв.м.</p>
+
+				<div class="how-much__block cleara">
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-1.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-2.jpg')"></div>
+					<div class="how-much__img" style="background-image: url('img/portfolio/portfolio3-3.jpg')"></div>
+				</div>
+				<div class="how-much__block">
+					<ul class="dashed">
+						<li>Планировочное решение.</li>
+						<li>3D Визуализация.</li>
+						<li>Схемы и чертежи.</li>
+						<li>Подбор материалов.</li>
+						<li>Авторское курирование.</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="form__layout">
+		<div class="wrap">
+			<div class="feedback-form">
+				<h2 class="h2-title">Бесплатная консультация</h2>
+				<p class="h1-subtitle">От лучшей европейской студии дизайна</p>
+				<form class="js-form" method="POST">
+					<div class="form-container cleara">
+						<div class="form-container__block">
+							<span>ВАШЕ ИМЯ</span>
+							<input type="text" name="name" placeholder="Иван" class="rfield">
+						</div>
+						<div class="form-container__block">
+							<span>НОМЕР ТЕЛЕФОНА</span>
+							<input type="text" name="phone" placeholder="+375 12 345 67 89" class="rfield js-only-digits">
+						</div>
+					</div>
+					<input class="blue-btn" type="submit" value="ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="text__layout">
+		<div class="wrap">
+			<div class="text-container cleara">
+				<div class="text-container__block">
+					<p>Посчитайте сколько стоит ваше время, которое вы потратите на общение со строителями если у вас не будет дизайн проекта. Из нашей практики ремонт квартиры без грамотного дизайн проекта с постоянным контролем заказчика обходится примерно на 30% дороже.</p>
+
+					<div class="quote-text orange">
+						<p>Гарантируем 100%, что стоимость нашего дизайн-проекта окупится полностью при проведении ремонтных работ</p>
+					</div>
+
+					<p class="quote-author"><i>Дмитрий, соучредитель<br>Studio 57 Беларусь</i></p>
+				</div>
+				<div class="text-container__block">
+					<img src="img/userfiles/man.png" alt="">
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="text__layout">
+		<div class="wrap">
+			<h2 class="h2-title">Ремонт под ключ</h2>
+			
+			<div class="text-container cleara">
+				<div class="text-container__block">
+					<img src="img/userfiles/man.png" alt="">
+				</div>
+				<div class="text-container__block">
+					<p>Посчитайте сколько стоит ваше время, которое вы потратите на общение со строителями если у вас не будет дизайн проекта. Из нашей практики ремонт квартиры без грамотного дизайн проекта с постоянным контролем заказчика обходится примерно на 30% дороже.</p>
+
+					<div class="quote-text orange">
+						<p>Мы сделаем вам ремонт на 30-40% дешевле, чем все остальные"</p>
+					</div>
+
+					<p>Посчитайте сколько стоит ваше время, которое вы потратите на общение со строителями если у вас не будет дизайн проекта.</p>
+
+					<div class="quote-text orange">
+						<p>Я работаю честно!</p>
+					</div>
+
+					<p class="quote-author"><i>Виталий, соучредитель<br>Строительные и отделочные работы</i></p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="creativ__layout grey-layout">
+		<div class="wrap">
+			<h2 class="h2-title">Мы делали креатив</h2>
+
+			<div class="creativ-container cleara">
+				<div class="creativ-container__item">
+					<img src="img/userfiles/creativ1.jpg" alt="">
+					<span class="creativ-container__title">Кровать <br>на троих</span>
+				</div>
+				<div class="creativ-container__item">
+					<img src="img/userfiles/creativ2.jpg" alt="">
+					<span class="creativ-container__title">Библиотека <br>в туалете</span>
+				</div>
+				<div class="creativ-container__item">
+					<img src="img/userfiles/creativ3.jpg" alt="">
+					<span class="creativ-container__title">Джакузи <br>посреди комнаты</span>
+				</div>
+				<div class="creativ-container__item">
+					<img src="img/userfiles/creativ4.jpg" alt="">
+					<span class="creativ-container__title">Клуб <br>в квартире</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="call-now__layout">
+		<div class="wrap">
+			<h2 class="h2-title">Остались вопросы?<br>Звоните прямо сейчас!</h2>
+			<a class="call-now__phone" href="tel:+375447362001">+375 44 736-20-01</a>
+		</div>
+	</section>
+
+	<footer class="footer__layout">
+		<div class="wrap">
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="">
+				<span class="logo-title">Дизайн интерьеров</span>
+			</a>
+			<div class="footer-columns cleara">
+				<div class="footer-columns__item">
+					<div class="header-contacts">
+						с 9:00 до 21:00 без выходных
+					</div>
+				</div>
+				<div class="footer-columns__item">
+					<div class="header-contacts header-contacts--map">
+						г. Минск ул. Пионерская, 9
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="callback-modal" class="popup-block mfp-hide">
+		<!-- <a class="popup-modal-dismiss" href="#"></a> -->
+		<div class="popup-block__body">
+			<div class="feedback-form">
+				<h2 class="h2-title">Бесплатная консультация</h2>
+				<p class="h1-subtitle">От лучшей европейской студии дизайна</p>
+				<form class="js-form" method="POST">
+					<div class="form-container cleara">
+						<div class="form-container__block">
+							<span>ВАШЕ ИМЯ</span>
+							<input type="text" name="name" placeholder="Иван" class="rfield">
+						</div>
+						<div class="form-container__block">
+							<span>НОМЕР ТЕЛЕФОНА</span>
+							<input type="text" name="phone" placeholder="+375 12 345 67 89" class="rfield js-only-digits">
+						</div>
+					</div>
+					<input class="blue-btn" type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="callback-success" class="popup-block mfp-hide">
+		<!-- <a class="popup-modal-dismiss" href="#"></a> -->
+		<div class="popup-block__body">
+				<h2 class="h2-popup-title">Ваше сообщение было успешно отправлено!</h2>
+				<p class="popup-subtitle">Наши менеджеры свяжутся с Вами в ближайшее время</p>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
