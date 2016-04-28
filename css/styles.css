@@ -546,21 +546,28 @@ input[type="text"]:focus {
 .portfolio-slider__text p {
   margin: 0;
 }
-.problems__item {
-  float: left;
-  width: 50%;
-  padding: 0 25px;
-  margin: 0 0 25px;
+.problems__item:first-child {
+  margin: 0 0 35px;
 }
-.problems__item:nth-child(2n+1) {
-  clear: left;
+.problems__item p {
+  font-size: 15px;
+  line-height: 17px;
 }
 .problems__item-title {
-  font: 100 25px/27px 'Roboto', sans-serif;
+  font: 100 25px/27px 'Roboto', sans-serif !important;
   margin: 0 0 18px;
 }
 .problems-slider {
   margin: 60px 0 30px;
+}
+.problems-slider .slick-slide {
+  padding: 0 155px;
+}
+.problems-slider .slick-next {
+  right: 30px;
+}
+.problems-slider .slick-prev {
+  left: 30px;
 }
 .popup-block {
   position: relative;
@@ -682,6 +689,6 @@ ul.dashed > li:before {
     left: 10px;
   }
   .problems-slider .slick-slide {
-    padding: 0 30px;
+    padding: 0 50px;
   }
 }
