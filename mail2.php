@@ -1,6 +1,6 @@
 <?
 if((isset($_POST['fb'])&&$_POST['fb']!="")&&(isset($_POST['area'])&&$_POST['area']!="")&&(isset($_POST['phone'])&&$_POST['phone']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'prasolova20@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $to = 'kuzmenkodmitry@gmail.com, legion.formation@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'Получить бесплатную консультацию'; //Заголовок сообщения
         $message = '
                 <html>
